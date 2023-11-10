@@ -1,7 +1,7 @@
 import { useState } from "react";
+import axios from "axios";
 import sideImg from "../assets/images/side.png";
-import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useUser } from "../UserProvider";
 
 const Login = () => {
@@ -19,16 +19,19 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-
-    // Simulating a successful login by setting a random user
-    const randomUser = {
-      id: Math.floor(Math.random() * 1000),
-      username: formData.username,
-    };
-
-    login(randomUser);
-
-    navigate("/classroom");
+    try {
+      const res = await axios.post(
+        "http://localhost:8000/api/users/login",
+        formData
+      );
+      const token = res.data.token;
+      localStorage.setItem("token", token);
+      console.log(formData, "login successful", res);
+      navigate("/classroom");
+    } catch (err) {
+      console.error("error during login", err);
+      // show something to user login failed
+    }
   };
 
   return (
