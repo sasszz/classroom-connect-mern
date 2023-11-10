@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import MeetingApp from "./components/meeting_app/src/MeetingApp";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Trivia from "./pages/Trivia";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
       <Route path="/video" element={<MeetingApp />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/trivia" element={<Trivia />} />
     </Route>
   )
 );
