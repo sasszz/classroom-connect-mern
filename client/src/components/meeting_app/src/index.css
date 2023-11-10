@@ -40,15 +40,15 @@ div .button {
 }
 .video-contain video {
   object-fit: contain;
-  overflow: hidden;
+  overflow:hidden
 }
-textarea:focus {
+textarea:focus{
   outline: none;
   border-color: none;
   box-shadow: none;
 }
 
-input:focus-visible {
+input:focus-visible{
   outline: none;
   border-color: none;
   box-shadow: none;
@@ -57,16 +57,19 @@ input:focus-visible {
 .video-cover video {
   position: absolute;
   object-fit: cover;
+  
 }
 
 input[type="radio"]:checked + label span {
-  background-color: #fff;
-  box-shadow: 0px 0px 0px 2px black inset;
+background-color: #fff; 
+box-shadow: 0px 0px 0px 2px black inset;
 }
 
-input[type="radio"]:checked + label {
-  color: #fff;
+
+input[type="radio"]:checked + label{
+ color: #fff; 
 }
+
 
 .flying-emojis {
   position: fixed;
@@ -89,10 +92,12 @@ input[type="radio"]:checked + label {
   height: 48px;
 }
 .emoji.wiggle-1 {
-  animation: emerge 3s forwards, wiggle-1 1s ease-in-out infinite alternate;
+  animation: emerge 3s forwards,
+    wiggle-1 1s ease-in-out infinite alternate;
 }
 .emoji.wiggle-2 {
-  animation: emerge 3s forwards, wiggle-2 1s ease-in-out infinite alternate;
+  animation: emerge 3s forwards,
+    wiggle-2 1s ease-in-out infinite alternate;
 }
 @keyframes emerge {
   to {
@@ -161,7 +166,7 @@ input[type="radio"]:checked + label {
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   text-align: center;
-  width: 35px;
+  width:35px;
   z-index: 10;
 }
 
