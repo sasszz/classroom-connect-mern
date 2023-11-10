@@ -1,0 +1,22 @@
+// eslint-disable-next-line no-unused-vars
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import "../App.css";
+
+function Home() {
+  const [message, setMessage] = useState("Loading...");
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:8000/api")
+      .then((res) => setMessage(res.data.message));
+  }, []);
+
+  return (
+    <>
+      <h2>Message from the backend: {message}</h2>
+    </>
+  );
+}
+
+export default Home;

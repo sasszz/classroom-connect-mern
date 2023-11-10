@@ -1,20 +1,27 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
-import axios from "axios";
-import "./App.css";
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route>
+      <Route path="/" element={<Home />} />
+      <Route path="/error" element={<NotFound />} />
+    </Route>
+  )
+);
 
 function App() {
-  const [message, setMessage] = useState("Loading...");
-
-  useEffect(() => {
-    axios
-      .get("http://localhost:8000/api")
-      .then((res) => setMessage(res.data.message));
-  }, []);
-
   return (
     <>
-      <h2>Message from the backend: {message}</h2>
+      <RouterProvider router={router} />
     </>
   );
 }
