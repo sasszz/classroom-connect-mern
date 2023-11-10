@@ -1,4 +1,6 @@
-# Classroom Connect
+![logoSmall](https://github.com/sasszz/classroom-connect-mern/assets/95937955/31d6e3f3-dacc-49b8-a7af-0f0f552f06b0)
+
+# Class Connect
 
 An innovative and interactive app for classrooms!
 
@@ -11,14 +13,22 @@ An innovative and interactive app for classrooms!
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 
-## DOTENV
+<br/>
+<br/>
+
+## For Developers
+### DOTENV
 Copy the `.env.local.example` file in your project's root directory, rename it to `.env`, and replace placeholder values with your actual configuration. 
 Please reach out to the Slack channel, @sasszz or @jchodon for the values.
 
-## Installation
+<br/>
+
+### Installation
 Please run `npm install` in both client and parent directories separately. Two terminals will be needed.
 
-## Running Locally
+<br/>
+
+### Running Locally
 Will require two terminals open and running simultaneously for server and client.
 
 Start the server in dir://classroom-connect-mern [PARENT DIRECTORY]
@@ -33,13 +43,16 @@ npm install --force
 npm run dev
 ```
 
-## Demo
+<br/>
+
+### Progress Video Demonstration
 
 https://www.loom.com/share/ad46aa4192f446cfb634bd431656f1ca?sid=05f21ef9-a9c7-4ee5-8e41-32eb4d5e9277
 
-<hr>
+<br/>
+<br/>
 
-## About
+## About the Project
 Built in collaboration with fellow coders in the pursuit of developing the future of technology.
 
 GirlDevelopIt, GDI, is a national nonprofit organization that creates welcoming, supportive opportunities for women and non-binary adults to learn software development skills. Please join or support this wonderful organization, or click the [link](https://girldevelopit.com/About/About-us/) to learn more! 
