@@ -8,12 +8,14 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import MeetingApp from "./components/meeting_app/src/MeetingApp";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route path="/" element={<Home />} />
       <Route path="/error" element={<NotFound />} />
+      <Route path="/video" element={<MeetingApp />} />
     </Route>
   )
 );
