@@ -11,6 +11,9 @@ An innovative and interactive app for classrooms!
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 
+## DOTENV
+Copy the `.env.local.example` file in your project's root directory, rename it to `.env`, and replace placeholder values with your actual configuration. 
+Please reach out to the Slack channel, @sasszz or @jchodon for the values.
 
 ## Installation
 ```
