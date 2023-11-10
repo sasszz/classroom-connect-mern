@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
-import MeetingApp from "./components/meeting_app/src/MeetingApp";
+import MeetingApp from "./components/meeting_app/MeetingApp";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Trivia from "./pages/Trivia";
