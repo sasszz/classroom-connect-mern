@@ -25,12 +25,12 @@ const Login = () => {
         formData
       );
       const token = res.data.token;
+      const userData = res.data;
       localStorage.setItem("token", token);
-      console.log(formData, "login successful", res);
+      login(userData);
       navigate("/classroom");
     } catch (err) {
       console.error("error during login", err);
-      // show something to user login failed
     }
   };
 

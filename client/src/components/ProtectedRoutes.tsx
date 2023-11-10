@@ -4,8 +4,7 @@ import { useUser } from "../UserProvider";
 
 const ProtectedRoutes = () => {
   const { user } = useUser();
-  const isAuthenticated = !!user; // Check if user exists (authenticated) or not
-
+  const isAuthenticated = !!user;
   return isAuthenticated ? <Outlet /> : <Navigate to="/login" />;
 };
 

@@ -1,10 +1,12 @@
+// UserContext.js
 import React, { useState, useContext, ReactNode } from "react";
 
 type User = {
-  id: number;
+  _id: string;
   name: string;
   email: string;
-  // Other user properties
+  username: string;
+  token: string;
 };
 
 type UserContextType = {
@@ -36,6 +38,7 @@ const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
 
   const logout = () => {
     setUser(null);
+    localStorage.removeItem("token");
   };
 
   return (
