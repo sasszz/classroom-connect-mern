@@ -11,6 +11,9 @@ function Home() {
       <div className='flex'>
           <div className='m-5'>
               <img src={logo} alt='logo' />
+              <Link to="/profile">
+              <button>profile</button>
+              </Link>
           </div>
           <div className='m-5'>
               <Link to='/login'>
