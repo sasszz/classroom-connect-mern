@@ -14,6 +14,11 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please add a password"],
   },
+  username: {
+    type: String,
+    required: [true, "Please add a username"],
+    unique: true,
+  },
 });
 const User = mongoose.model("User", userSchema);
 

@@ -11,8 +11,8 @@ module.exports.index = (request, response) => {
 // @RegisterUsers
 module.exports.registerUser = asyncHandler(async (req, res) => {
   console.log("hihi", req.body);
-  const { name, email, password } = req.body;
-  if (!name || !email || !password) {
+  const { name, email, password, username } = req.body;
+  if (!name || !email || !password || !username) {
     res.status(400);
     throw new Error("Please add all fields");
   }
@@ -30,6 +30,7 @@ module.exports.registerUser = asyncHandler(async (req, res) => {
   const user = await User.create({
     name,
     email,
+    username,
     password: hashedPassword,
   });
   if (user) {
@@ -37,6 +38,7 @@ module.exports.registerUser = asyncHandler(async (req, res) => {
       _id: user.id,
       name: user.name,
       email: user.email,
+      username: user.username,
       token: generateToken(user.id),
     });
   } else {
@@ -47,13 +49,14 @@ module.exports.registerUser = asyncHandler(async (req, res) => {
 
 // @Login Users
 module.exports.loginUser = asyncHandler(async (req, res) => {
-  const { email, password } = req.body;
-  const user = await User.findOne({ email });
+  const { username, password } = req.body;
+  const user = await User.findOne({ username });
   if (user && (await bcrypt.compare(password, user.password))) {
     res.json({
       _id: user.id,
       name: user.name,
       email: user.email,
+      username: user.username,
       token: generateToken(user.id),
     });
   } else {

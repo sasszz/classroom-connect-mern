@@ -12,6 +12,7 @@ import MeetingApp from "./components/meeting_app/MeetingApp";
 import ProtectedRoutes from "./components/ProtectedRoutes";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+
 import Profile from "./pages/Profile";
 import Trivia from "./pages/Trivia";
 import Classroom from "./pages/Classroom";
