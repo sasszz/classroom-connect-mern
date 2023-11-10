@@ -5,6 +5,20 @@ import "../App.css";
 
 function Home() {
   return (
+    <> 
+      <div className='flex'>
+          <div className='m-5'>
+              <img src={logo} alt='logo' />
+              <Link to="/profile">
+              <button>profile</button>
+              </Link>
+          </div>
+          <div className='m-5'>
+              <Link to='/login'>
+              <button className='bg-[#00008B] text-white rounded-3xl text-xl m-5 p-5 px-10'>login</button>
+              </Link>
+          </div>
+
     <>
       <Header />
       <div className="mt-10">
