@@ -9,6 +9,8 @@ import {
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import MeetingApp from "./components/meeting_app/src/MeetingApp";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +18,8 @@ const router = createBrowserRouter(
       <Route path="/" element={<Home />} />
       <Route path="/error" element={<NotFound />} />
       <Route path="/video" element={<MeetingApp />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
     </Route>
   )
 );
