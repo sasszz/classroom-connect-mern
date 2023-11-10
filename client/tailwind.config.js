@@ -17,6 +17,7 @@ module.exports = windmill({
       fontFamily: {
         lato: ["lato", "sans-serif"],
         sans: [
+          "montserrat",
           "lato",
           "BlinkMacSystemFont",
           "-apple-system",
