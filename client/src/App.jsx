@@ -15,7 +15,7 @@ import Signup from "./pages/Signup";
 import Profile from "./pages/Profile";
 import Trivia from "./pages/Trivia";
 import Classroom from "./pages/Classroom";
-
+import AboutUs from "./pages/AboutUs";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,8 +25,9 @@ const router = createBrowserRouter(
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/profile" element={<Profile />} />
-      <Route path="/trivia" element={<Trivia />} />
+      <Route path="/about" element={<AboutUs />} />
       <Route element={<ProtectedRoutes />}>
+        <Route path="/trivia" element={<Trivia />} />
         <Route path="/video" element={<MeetingApp />} />
         <Route path="/classroom" element={<Classroom />} />
       </Route>
