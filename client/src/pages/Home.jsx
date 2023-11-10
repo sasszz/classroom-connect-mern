@@ -1,7 +1,5 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
+import { Link } from "react-router-dom"; // Make sure to import Link if using React Router
 import Header from "../components/Header";
-import "../App.css";
 
 function Home() {
   return (
@@ -12,6 +10,10 @@ function Home() {
         <div className="m-4 font-bold text-3xl text-white italic">
           Where Meeting Meets Fun!
         </div>
+
+        <Link to="/profile">
+          <button>Profile</button>
+        </Link>
       </div>
     </>
   );

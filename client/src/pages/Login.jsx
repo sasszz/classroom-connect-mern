@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 import sideImg from "../assets/images/side.png";
 import { Link, useNavigate } from "react-router-dom";
+import { useUser } from "../UserProvider";
 
 const Login = () => {
   const navigate = useNavigate();
+  const { login } = useUser();
 
   const [formData, setFormData] = useState({
     username: "",
