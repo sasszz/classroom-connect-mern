@@ -35,4 +35,14 @@ npm run dev
 
 ## Demo
 
-[VIDEO](https://www.loom.com/share/ad46aa4192f446cfb634bd431656f1ca?sid=05f21ef9-a9c7-4ee5-8e41-32eb4d5e9277)https://www.loom.com/share/ad46aa4192f446cfb634bd431656f1ca?sid=05f21ef9-a9c7-4ee5-8e41-32eb4d5e9277
+https://www.loom.com/share/ad46aa4192f446cfb634bd431656f1ca?sid=05f21ef9-a9c7-4ee5-8e41-32eb4d5e9277
+
+<hr>
+
+## About
+Built in collaboration with fellow coders in the pursuit of developing the future of technology.
+
+GirlDevelopIt, GDI, is a national nonprofit organization that creates welcoming, supportive opportunities for women and non-binary adults to learn software development skills. Please join or support this wonderful organization, or click the [link](https://girldevelopit.com/About/About-us/) to learn more! 
+
+<img width="447" alt="gdi_hackathon_2023" src="https://github.com/sasszz/classroom-connect-mern/assets/95937955/a681fbb2-67bc-41c6-b84f-e4cb52be0c35">
+
