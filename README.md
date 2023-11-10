@@ -16,23 +16,23 @@ Copy the `.env.local.example` file in your project's root directory, rename it t
 Please reach out to the Slack channel, @sasszz or @jchodon for the values.
 
 ## Installation
-```
-npm install
-```
+Please run `npm install` in both client and parent directories separately. Two terminals will be needed.
 
 ## Running Locally
 Will require two terminals open and running simultaneously for server and client.
 
-Start the server in dir://classroom-connect-mern
+Start the server in dir://classroom-connect-mern [PARENT DIRECTORY]
 ```
+npm install
 node server.js
 ```
 
-Start the frontend in dir://classroom-connect-mern/client
+Start the frontend in dir://classroom-connect-mern/client [CLIENT FOLDER]
 ```
+npm install --force
 npm run dev
 ```
 
 ## Demo
 
-VIDEO
+[VIDEO](https://www.loom.com/share/ad46aa4192f446cfb634bd431656f1ca?sid=05f21ef9-a9c7-4ee5-8e41-32eb4d5e9277)https://www.loom.com/share/ad46aa4192f446cfb634bd431656f1ca?sid=05f21ef9-a9c7-4ee5-8e41-32eb4d5e9277
