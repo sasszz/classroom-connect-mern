@@ -5,10 +5,10 @@ function Home() {
   return (
     <>
       <Header />
-      <div className="flex row">
+      <div className="flex row items-center">
         <div className="p-24">
-          <h2 className="font-bold text-3xl">Our Mission</h2>
-          <p>
+          <h2 className="font-extrabold text-5xl">Our Mission</h2>
+          <p className="mt-8">
             COVID-19 has impacted the way way we learn today. However, online
             learning can’t bring in the environment of in person class.
           </p>
@@ -19,6 +19,15 @@ function Home() {
           </p>
         </div>
         <img src={Hero} alt="Hero Image" />
+      </div>
+      <div className="items-center bg-[#EEC643]">
+        <div className="p-24 text-center ">
+          <h2 className="font-extrabold text-5xl">Meet Our Team</h2>
+          <p className="mt-8">
+            content content content content content content content content
+            content
+          </p>
+        </div>
       </div>
     </>
   );
