@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Hero from "../assets/images/home-heroimg.png";
+import FooterLanding from "../components/FooterLanding";
 
 function Home() {
   return (
@@ -24,6 +25,7 @@ function Home() {
           </h2>
         </div>
       </div>
+      <FooterLanding />
     </>
   );
 }
