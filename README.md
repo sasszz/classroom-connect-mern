@@ -50,7 +50,6 @@ npm run dev
 ```
 
 <br/>
-<br/>
 
 ## About the Project
 
