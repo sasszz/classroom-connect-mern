@@ -11,13 +11,13 @@ const Footer = () => {
       <div className="flex row gap-4">
         <img className="h-[42px]" src={Logo} alt="Classroom Connect" />
         <Link to="/">
-          <button className="bg-[#011638] hover:bg-[#00008B] text-white rounded-lg border text-sm px-8 py-2 flex row gap-2 justify-center items-center">
+          <button className="bg-[#011638] hover:bg-[#00008B] text-white rounded-lg border text-sm px-8 py-2 flex row gap-2 justify-center items-center sm:ml-0 ml-8 mr-0">
             <img className="rotate-180 h-[12px]" alt="logout" src={Logout} />
             <p>Logout</p>
           </button>
         </Link>
       </div>
-      <div className="flex row gap-4 hidden sm:inline">
+      <div className="hidden sm:flex flex-row gap-4">
         <button className="bg-[#011638] hover:bg-[#00008B] text-white rounded-lg border text-sm px-4 py-2 flex row gap-2 justify-center items-center">
           <img className="h-[16px]" alt="Chat" src={Chat} />
           <p>Chat</p>
