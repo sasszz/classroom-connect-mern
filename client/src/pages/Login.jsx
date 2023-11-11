@@ -27,7 +27,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/users/login",
+        "https://classroom-connect-mern-pib2-b5ai2hfj8-sasszz.vercel.app/api/users/login",
         formData
       );
       const token = res.data.token;
@@ -95,7 +95,8 @@ const Login = () => {
 
         <Link to="/signup">
           <div>
-            Haven't Registered? <span className="hover:text-[#1178f8] underline">Sign Up</span>
+            Haven't Registered?{" "}
+            <span className="hover:text-[#1178f8] underline">Sign Up</span>
           </div>
         </Link>
       </div>

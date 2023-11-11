@@ -20,7 +20,7 @@ const Signup = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/users/register",
+        "https://classroom-connect-mern-pib2-b5ai2hfj8-sasszz.vercel.app/api/users/register",
         formData
       );
       //token from the response data from the server
@@ -104,7 +104,8 @@ const Signup = () => {
 
         <Link to="/login">
           <div>
-            Already have an account? <span className="hover:text-[#1178f8] underline">Login</span>
+            Already have an account?{" "}
+            <span className="hover:text-[#1178f8] underline">Login</span>
           </div>
         </Link>
       </div>
