@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Avatar1 from "../assets/images/avatar1.png";
 import Avatar2 from "../assets/images/avatar2.png";
@@ -8,6 +8,7 @@ import Avatar5 from "../assets/images/avatar5.png";
 import Github from "../assets/images/github.png";
 import Linkedin from "../assets/images/linkedin.png";
 import Website from "../assets/images/website.png";
+import Dice from "../assets/images/dice.png";
 
 const avatars = [Avatar1, Avatar2, Avatar3, Avatar4, Avatar5];
 
@@ -47,6 +48,27 @@ const Developer = ({ name, role, github, linkedin, website }) => {
 };
 
 const DeveloperGrid = () => {
+  const [avatarIndex, setAvatarIndex] = useState(0);
+
+  const randomizeAvatars = () => {
+    const newIndex = Math.floor(Math.random() * avatars.length);
+    setAvatarIndex(newIndex);
+  };
+
+  const diceRef = useRef<HTMLImageElement>(null); // Define the type of ref
+
+  const handleHover = () => {
+    if (diceRef.current) {
+      diceRef.current.style.transform = "rotate(45deg)";
+    }
+  };
+
+  const handleHoverOut = () => {
+    if (diceRef.current) {
+      diceRef.current.style.transform = "rotate(0deg)";
+    }
+  };
+
   // Sample data for developers
   const developers = [
     {
@@ -115,17 +137,33 @@ const DeveloperGrid = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-32">
-      {developers.map((dev, index) => (
-        <Developer
-          key={index}
-          name={dev.name}
-          role={dev.role}
-          github={dev.github}
-          linkedin={dev.linkedin}
-          website={dev.website}
+    <div className="flex flex-col items-center justify-center pt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-32">
+        {developers.map((dev, index) => (
+          <Developer
+            key={index}
+            name={dev.name}
+            role={dev.role}
+            github={dev.github}
+            linkedin={dev.linkedin}
+            website={dev.website}
+          />
+        ))}
+      </div>
+      <button
+        className="bg-[#00008B] flex my-8 row gap-2 justify-center items-center hover:bg-[#1178f8] text-white rounded-xl px-4 py-2 w-60"
+        onClick={randomizeAvatars}
+        onMouseEnter={handleHover}
+        onMouseLeave={handleHoverOut}
+      >
+        <img
+          ref={diceRef}
+          className="h-[24px] hover:rotate-45"
+          src={Dice}
+          alt="Dice"
         />
-      ))}
+        <p>Randomize Avatars</p>
+      </button>
     </div>
   );
 };

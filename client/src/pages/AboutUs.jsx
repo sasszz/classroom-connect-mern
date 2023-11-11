@@ -3,10 +3,6 @@ import Hero from "../assets/images/heroimg.png";
 import DeveloperGrid from "../components/Developer";
 import FooterLanding from "../components/FooterLanding";
 
-const handleRefresh = () => {
-  window.location.reload();
-};
-
 function AboutUs() {
   return (
     <>
@@ -35,15 +31,7 @@ function AboutUs() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center py-24">
-        <DeveloperGrid />
-        <button
-          className="bg-[#00008B] mt-8 hover:bg-[#EEC643] text-white rounded-xl px-4 py-2 my-2 w-60"
-          onClick={handleRefresh}
-        >
-          Randomize Avatars
-        </button>
-      </div>
+      <DeveloperGrid />
       <FooterLanding />
     </>
   );
