@@ -6,6 +6,7 @@ import { BsChatLeftText, BsPeople } from "react-icons/bs";
 import { RxCross2 } from "react-icons/rx";
 import { AiOutlineSend } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Footer2 from "../components/Footer2";
 
 const Trivia = () => {
   // State to track the active section
@@ -16,9 +17,9 @@ const Trivia = () => {
 
   const divsData = [
     "HyperText Markup Language",
-    "HyperText Markup Language",
-    "HyperText Markup Language",
-    "HyperText Markup Language",
+    "Highly Textured Machine Learning",
+    "Hardware Multi Transmission Link",
+    "Host Matrix Transformation Lexicon",
   ];
 
   const handleKeyDown = (event) => {
@@ -60,7 +61,7 @@ const Trivia = () => {
   };
 
   return (
-    <div className="">
+    <div className="bg-black min-h-screen flex flex-col justify-between overflow-y-hidden">
       <div className="text-white h-auto flex">
         <div>
           <div className="m-40">
@@ -71,7 +72,7 @@ const Trivia = () => {
           <div className="bg-black text-white">
             <ProgressBar
               completed={10}
-              bgColor="hotpink"
+              bgColor="blue"
               className="text-left "
             />
             <div
@@ -83,7 +84,7 @@ const Trivia = () => {
                 <div
                   key={index}
                   id={`div-${index}`}
-                  className={`bg-[#00008B] rounded border text-white p-10 m-2 w-1/5 md:w-1/6 h-40 focus:outline-none focus:border-4 focus:border-blue-700 focus:shadow-outline-blue`}
+                  className={`bg-[#00008B] cursor-pointer rounded mt-8 border text-white p-10 m-2 w-1/5 md:w-1/6 h-40 focus:outline-none focus:border-4 focus:text-[#00008B] focus:bg-[#EEC643] focus:border-blue-700 focus:shadow-outline-blue`}
                   tabIndex="0"
                 >
                   {div}
@@ -198,40 +199,7 @@ const Trivia = () => {
           </div>
         )}
       </div>
-      <div className="bg-black text-white fixed bottom-0 left-0 right-0 flex flex-wrap text-lg p-3 justify-between">
-        <Link to="/classroom">
-          <div className="border rounded p-2 m-2 flex justify-center items-center">
-            <CgLogOut className="m-1" />
-            <div>Leave Trivia</div>
-          </div>
-        </Link>
-        <div
-          style={{ cursor: "pointer" }}
-          onClick={() => toggleVisibility("leaderboard")}
-          className="border rounded p-2 m-2 flex justify-center items-center"
-        >
-          <MdLeaderboard className="m-1" />
-          <div>LeaderBoard</div>
-        </div>
-        <div className="flex">
-          <div
-            style={{ cursor: "pointer" }}
-            onClick={() => toggleVisibility("chat")}
-            className="border rounded p-2 m-2 flex justify-center items-center"
-          >
-            <BsChatLeftText className="m-1" />
-            <div>Chat</div>
-          </div>
-          <div
-            style={{ cursor: "pointer" }}
-            onClick={() => toggleVisibility("participants")}
-            className="border rounded p-2 m-2 flex justify-center items-center"
-          >
-            <BsPeople className="m-1" />
-            <div>Students</div>
-          </div>
-        </div>
-      </div>
+      <Footer2 />
     </div>
   );
 };

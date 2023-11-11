@@ -11,6 +11,7 @@ import WebcamOffIcon from "../../icons/WebcamOffIcon";
 import WebcamOnIcon from "../../icons/Bottombar/WebcamOnIcon";
 import MicOffIcon from "../../icons/MicOffIcon";
 import MicOnIcon from "../../icons/Bottombar/MicOnIcon";
+import Footer2 from "../../../Footer2";
 
 export function JoiningScreen({
   participantName,
@@ -475,6 +476,7 @@ export function JoiningScreen({
             </div>
           </div>
         </div>
+        <Footer2 />
       </div>
       <ConfirmBox
         open={dlgMuted}
