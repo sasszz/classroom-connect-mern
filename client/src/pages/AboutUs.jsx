@@ -20,7 +20,7 @@ function AboutUs() {
             meaningful bonds
           </p>
         </div>
-        <img src={Hero} alt="Hero Image" />
+        <img className="hidden sm:inline" src={Hero} alt="Hero Image" />
       </div>
       <div className="items-center bg-[#EEC643]">
         <div className="p-24 text-center ">

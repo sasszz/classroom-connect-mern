@@ -138,17 +138,19 @@ const DeveloperGrid = () => {
 
   return (
     <div className="flex flex-col items-center justify-center pt-12">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-32">
-        {developers.map((dev, index) => (
-          <Developer
-            key={index}
-            name={dev.name}
-            role={dev.role}
-            github={dev.github}
-            linkedin={dev.linkedin}
-            website={dev.website}
-          />
-        ))}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 sm:px-8 md:px-16 lg:px-32">
+        <div className="mx-auto">
+          {developers.map((dev, index) => (
+            <Developer
+              key={index}
+              name={dev.name}
+              role={dev.role}
+              github={dev.github}
+              linkedin={dev.linkedin}
+              website={dev.website}
+            />
+          ))}
+        </div>
       </div>
       <button
         className="bg-[#00008B] flex my-8 row gap-2 justify-center items-center hover:bg-[#1178f8] text-white rounded-xl px-4 py-2 w-60"

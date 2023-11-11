@@ -9,9 +9,9 @@ const FooterLanding = () => {
     <div className="bg-[#011638] h-18 p-4 flex row justify-between px-12">
       <div className="flex row gap-4 items-center">
         <img className="h-[42px]" src={Logo} alt="Classroom Connect" />
-        <img className="h-[42px]" src={GDILogo} alt="GDI" />
+        <img className="h-[42px] hidden sm:inline" src={GDILogo} alt="GDI" />
       </div>
-      <p className="text-white self-center">
+      <p className="text-white self-center hidden sm:inline">
         Built in the spirit of collaboration for the{" "}
         <Link
           className="hover:text-[#EEC643] hover:underline"

@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
-import { CgLogOut } from "react-icons/cg";
 import { MdLeaderboard } from "react-icons/md";
 import { BsChatLeftText, BsPeople } from "react-icons/bs";
 import { RxCross2 } from "react-icons/rx";
 import { AiOutlineSend } from "react-icons/ai";
-import { Link } from "react-router-dom";
 import Footer2 from "../components/Footer2";
 
 const Trivia = () => {
@@ -64,27 +62,21 @@ const Trivia = () => {
     <div className="bg-black min-h-screen flex flex-col justify-between overflow-y-hidden">
       <div className="text-white h-auto flex">
         <div>
-          <div className="m-40">
-            <div className="font-bold text-5xl">Question</div>
-            <div className="text-2xl m-5">What does HTML stand for?</div>
+          <div className="m-6 sm:m-40">
+            <div className="font-bold text-3xl sm:text-5xl">Question</div>
+            <div className="text-xl sm:text-2xl m-2 sm:m-5">
+              What does HTML stand for?
+            </div>
           </div>
 
           <div className="bg-black text-white">
-            <ProgressBar
-              completed={10}
-              bgColor="blue"
-              className="text-left "
-            />
-            <div
-              className="flex flex-wrap justify-center text-xl font-bold"
-              onKeyDown={handleKeyDown}
-              tabIndex="0"
-            >
+            <ProgressBar completed={10} bgColor="blue" className="text-left " />
+            <div className="flex flex-wrap justify-center text-xl font-bold mb-4 sm:mt-8">
               {divsData.map((div, index) => (
                 <div
                   key={index}
                   id={`div-${index}`}
-                  className={`bg-[#00008B] cursor-pointer rounded mt-8 border text-white p-10 m-2 w-1/5 md:w-1/6 h-40 focus:outline-none focus:border-4 focus:text-[#00008B] focus:bg-[#EEC643] focus:border-blue-700 focus:shadow-outline-blue`}
+                  className={`bg-[#00008B] cursor-pointer rounded mt-4 sm:mt-8 border text-white p-4 sm:p-10 m-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-24 sm:h-40 focus:outline-none focus:border-4 focus:text-[#00008B] focus:bg-[#EEC643] focus:border-blue-700 focus:shadow-outline-blue`}
                   tabIndex="0"
                 >
                   {div}

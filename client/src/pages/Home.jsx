@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import { Link } from "react-router-dom";
 import Hero from "../assets/images/home-heroimg.png";
 import FooterLanding from "../components/FooterLanding";
 
@@ -16,13 +17,20 @@ function Home() {
             teachers to build meaningful friendships.
           </p>
         </div>
-        <img src={Hero} alt="Hero Image" />
+        <img className="hidden sm:inline" src={Hero} alt="Hero Image" />
       </div>
       <div className="items-center bg-[#EEC643]">
         <div className="p-24 text-center ">
           <h2 className="font-extrabold text-2xl">
-            Engagement that you are missing in your virtual class
+            Engagement that you are missing in your virtual class.
           </h2>
+          <p className="mt-8">
+            Learn more about our mission and our team
+            <Link className="underline mx-1 hover:text-white" to="/about">
+              here
+            </Link>
+            .
+          </p>
         </div>
       </div>
       <FooterLanding />

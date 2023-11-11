@@ -17,7 +17,7 @@ const Footer = () => {
           </button>
         </Link>
       </div>
-      <div className="flex row gap-4">
+      <div className="flex row gap-4 hidden sm:inline">
         <button className="bg-[#011638] hover:bg-[#00008B] text-white rounded-lg border text-sm px-4 py-2 flex row gap-2 justify-center items-center">
           <img className="h-[16px]" alt="Chat" src={Chat} />
           <p>Chat</p>
