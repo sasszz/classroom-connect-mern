@@ -50,18 +50,6 @@ npm run dev
 ```
 
 <br/>
-
-### Progress Video Demonstration
-
-Part 2
-https://www.loom.com/share/f8c77a6bd7854260b0e9fd0ca8cf3831?sid=7a04079f-ad21-4d7c-89e6-3c8622f4d346
-
-<br>
-
-Part 1
-https://www.loom.com/share/ad46aa4192f446cfb634bd431656f1ca?sid=05f21ef9-a9c7-4ee5-8e41-32eb4d5e9277
-
-<br/>
 <br/>
 
 ## About the Project
