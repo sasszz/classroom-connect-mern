@@ -14,7 +14,7 @@ An innovative and interactive app for classrooms!
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 
 
-<img width="1503" alt="Screenshot 2023-11-11 at 8 18 47 AM" src="https://github.com/sasszz/classroom-connect-mern/assets/95937955/4a58ca14-936c-42c2-bce2-eb448f0db4c4">
+
 
 <br/>
 <br/>
@@ -58,6 +58,14 @@ Start the frontend in dir://classroom-connect-mern/client [CLIENT FOLDER]
 npm install --force
 npm run dev
 ```
+
+<br/>
+
+
+### Gif Wireframes
+![part1demo](https://github.com/sasszz/classroom-connect-mern/assets/95937955/488ef529-205c-431c-a8c5-81829d21a25b)
+![lowressuper](https://github.com/sasszz/classroom-connect-mern/assets/95937955/aefd5599-ab27-48b7-8824-cb55a25f0130)
+![avatardemo](https://github.com/sasszz/classroom-connect-mern/assets/95937955/06a1c912-1b0a-4375-9c16-0627901c8ac9)
 
 <br/>
 
