@@ -27,17 +27,17 @@ const Developer = ({ name, role, github, linkedin, website }) => {
         <p className="text-gray-600 text-sm text-center">{role}</p>
         <div className="flex justify-center items-center mt-2">
           {github && (
-            <Link to={github}>
+            <Link to={github} target="_blank" rel="noopener noreferrer">
               <img src={Github} alt="Github" />
             </Link>
           )}
           {linkedin && (
-            <Link to={linkedin}>
+            <Link to={linkedin} target="_blank" rel="noopener noreferrer">
               <img src={Linkedin} alt="Linkedin" />
             </Link>
           )}
           {website && (
-            <Link to={website}>
+            <Link to={website} target="_blank" rel="noopener noreferrer">
               <img src={Website} alt="Website" />
             </Link>
           )}
