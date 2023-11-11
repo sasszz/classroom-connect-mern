@@ -2,7 +2,7 @@
 
 # Class Connect
 
-An innovative and interactive app for classrooms!
+An innovative and interactive app for classrooms! Integrated with VideoSDK's Github repository for video conferencing.
 
 ## Technologies
 
