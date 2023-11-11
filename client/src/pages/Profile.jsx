@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import ProfilePicUploadForm from "../components/meeting_app/src/components/ProfilePicUploadForm.JSX";
+import ProfilePicUploadForm from "../components/meeting_app/src/components/ProfilePicUploadForm.jsx";
 import DefaultPic from "../assets/images/logo.png";
 
 const Profile = () => {
