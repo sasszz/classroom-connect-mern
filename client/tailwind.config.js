@@ -110,5 +110,5 @@ module.exports = windmill({
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [],
 });
