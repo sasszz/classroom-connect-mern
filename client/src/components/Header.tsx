@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="bg-[#011638] py-4">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="mx-12 flex justify-between items-center">
         <Link to="/">
           <img src={Logo} alt="Class Connect" className="md:ml-0 h-20" />
         </Link>

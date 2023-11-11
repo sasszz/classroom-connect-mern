@@ -1,32 +1,27 @@
 import Header from "../components/Header";
-import Hero from "../assets/images/heroimg.png";
+import Hero from "../assets/images/home-heroimg.png";
 
 function Home() {
   return (
     <>
       <Header />
-      <div className="flex row items-center">
+      <div className="flex row items-center text-white bg-gradient-to-b from-[#011638] from-90% via-[#011638] via-30% to-[#326298] to-10%">
         <div className="p-24">
-          <h2 className="font-extrabold text-5xl">Our Mission</h2>
+          <h2 className="font-extrabold text-5xl">
+            All-in-one classroom in a virtual space
+          </h2>
           <p className="mt-8">
-            COVID-19 has impacted the way way we learn today. However, online
-            learning can’t bring in the environment of in person class.
-          </p>
-          <p className="mt-4">
-            ClassConnect aims to build connections between teachers and
-            students, increase engagement in the class, and collaboration for
-            meaningful bonds
+            ClassConnect is your virtual classroom to engage with classmates and
+            teachers to build meaningful friendships.
           </p>
         </div>
         <img src={Hero} alt="Hero Image" />
       </div>
       <div className="items-center bg-[#EEC643]">
         <div className="p-24 text-center ">
-          <h2 className="font-extrabold text-5xl">Meet Our Team</h2>
-          <p className="mt-8">
-            content content content content content content content content
-            content
-          </p>
+          <h2 className="font-extrabold text-2xl">
+            Engagement that you are missing in your virtual class
+          </h2>
         </div>
       </div>
     </>

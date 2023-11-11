@@ -7,11 +7,17 @@ import { useUser } from "../UserProvider";
 const Login = () => {
   const navigate = useNavigate();
   const { login } = useUser();
+  const [showTestButton, setShowTestButton] = useState(true);
 
   const [formData, setFormData] = useState({
     username: "",
     password: "",
   });
+
+  const testLogin = async () => {
+    setFormData({ username: "wee", password: "wee" });
+    setShowTestButton(false);
+  };
 
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -37,7 +43,7 @@ const Login = () => {
   return (
     <div className="bg-[#00008B] flex flex-wrap items-center h-screen w-screen m-auto">
       <img className="h-screen w-auto" src={sideImg} alt="" />
-      <div className="text-white m-auto w-auto">
+      <div className="text-white text-center m-auto w-auto">
         <div className="text-3xl m-5 font-bold">Login</div>
         <form onSubmit={handleLogin}>
           <input
@@ -64,12 +70,19 @@ const Login = () => {
           <br />
           <button
             type="submit"
-            className="bg-[#1178f8] text-white rounded-xl px-4 py-2 my-2 w-60"
+            className="bg-[#1178f8] hover:bg-[#EEC643] text-white rounded-xl px-4 py-2 my-2 w-60"
           >
             Login
           </button>
         </form>
-
+        {showTestButton && (
+          <button
+            onClick={testLogin}
+            className="bg-[#1178f8] hover:bg-[#EEC643] text-white rounded-xl px-4 py-2 my-2 w-60"
+          >
+            Test Login Credentials
+          </button>
+        )}
         <div className="flex items-center space-x-4 w-60 mx-20">
           <div className="border-t border-b border-gray-300 flex-grow"></div>
           <span className="text-white">or</span>
@@ -82,7 +95,7 @@ const Login = () => {
 
         <Link to="/signup">
           <div>
-            Haven't Registered? <span className="underline">Signup</span>
+            Haven't Registered? <span className="hover:text-[#1178f8] underline">Sign Up</span>
           </div>
         </Link>
       </div>

@@ -13,7 +13,11 @@ module.exports = windmill({
       indigo: colors.indigo,
       slate: colors.slate,
     },
+
     extend: {
+      cursor: {
+        star: "url(/src/assets/images/pixelstar.png), pointer",
+      },
       fontFamily: {
         lato: ["lato", "sans-serif"],
         sans: [
