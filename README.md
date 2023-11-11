@@ -13,6 +13,16 @@ An innovative and interactive app for classrooms!
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 
+
+<img width="1503" alt="Screenshot 2023-11-11 at 8 18 47 AM" src="https://github.com/sasszz/classroom-connect-mern/assets/95937955/4a58ca14-936c-42c2-bce2-eb448f0db4c4">
+
+<br/>
+<br/>
+
+## Video Demonstration
+https://youtu.be/2uBh8MiG7jk
+
+
 <br/>
 <br/>
 
