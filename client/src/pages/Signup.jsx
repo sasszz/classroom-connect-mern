@@ -20,7 +20,7 @@ const Signup = () => {
 
     try {
       const res = await axios.post(
-        "https://classroom-connect-mern-pib2-b5ai2hfj8-sasszz.vercel.app/api/users/register",
+        "https://classroomconnect-backend.onrender.com/api/users/register",
         formData
       );
       //token from the response data from the server
