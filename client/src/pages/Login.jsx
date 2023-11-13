@@ -4,6 +4,9 @@ import sideImg from "../assets/images/side.png";
 import { Link, useNavigate } from "react-router-dom";
 import { useUser } from "../UserProvider";
 import Header2 from "../components/Header2";
+import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google"
+
+const cliendId = '303685634771-ufqce8pbo6edvn7vh8gbkedsogtnm02m.apps.googleusercontent.com'
 
 const Login = () => {
   const navigate = useNavigate();
@@ -94,8 +97,22 @@ const Login = () => {
             <div className="border-t border-b border-gray-300 flex-grow"></div>
           </div>
 
-          <div className="border mx-20 text-white rounded-2xl px-4 py-2 my-2 w-60">
+          {/* <div onClick={signIn} 
+          className="border mx-20 text-white rounded-2xl px-4 py-2 my-2 w-60">
             Login with Google
+          </div>           */}
+
+          <div className="mx-20 text-white rounded-2xl px-4 py-2 my-2 w-60">
+            <GoogleOAuthProvider clientId={cliendId}>
+              <GoogleLogin
+                onSuccess={credentailResponse => {
+                  console.log(credentailResponse);
+                }}
+                onError={() => {
+                  console.log('Login Failed');
+                }}
+              />
+            </GoogleOAuthProvider>
           </div>
 
           <Link to="/signup">
