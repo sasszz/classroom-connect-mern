@@ -83,14 +83,11 @@ const Login = () => {
               Login
             </button>
           </form>
-          {showTestButton && (
-            <button
-              onClick={navigate("/classroom")}
-              className="bg-[#1178f8] hover:bg-[#EEC643] text-white rounded-xl px-4 py-2 my-2 w-60"
-            >
+          <Link to="/classroom">
+            <button className="bg-[#1178f8] hover:bg-[#EEC643] text-white rounded-xl px-4 py-2 my-2 w-60">
               Test Login
             </button>
-          )}
+          </Link>
           <div className="flex items-center space-x-4 w-60 mx-20">
             <div className="border-t border-b border-gray-300 flex-grow"></div>
             <span className="text-white">or</span>
