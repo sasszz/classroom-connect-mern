@@ -85,10 +85,10 @@ const Login = () => {
           </form>
           {showTestButton && (
             <button
-              onClick={testLogin}
+              onClick={navigate("/classroom")}
               className="bg-[#1178f8] hover:bg-[#EEC643] text-white rounded-xl px-4 py-2 my-2 w-60"
             >
-              Test Login Credentials
+              Test Login
             </button>
           )}
           <div className="flex items-center space-x-4 w-60 mx-20">

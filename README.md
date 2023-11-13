@@ -16,6 +16,11 @@ An innovative and interactive app for classrooms!
 <br/>
 <br/>
 
+## Integrated with VideoSDK 
+Video conferencing feature implemented via:
+https://github.com/videosdk-live/videosdk-rtc-react-sdk-example
+
+
 ## For Developers
 
 ### DOTENV
@@ -45,7 +50,7 @@ node server.js
 Start the frontend in dir://classroom-connect-mern/client [CLIENT FOLDER]
 
 ```
-npm install --force
+npm install
 npm run dev
 ```
 
